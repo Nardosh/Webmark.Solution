@@ -357,3 +357,75 @@ setTimeout(() => {
     toggleChat();
   }
 }, 8000);
+
+
+
+// formsubmit 
+
+
+function showNotification(text) {
+  const notif = document.getElementById("notif");
+  const notifText = document.getElementById("notif-text");
+
+  notifText.innerText = text;
+  notif.classList.add("show");
+
+  setTimeout(() => {
+    notif.classList.remove("show");
+  }, 3000);
+}
+
+
+
+async function submitForm() {
+
+  const name = document.getElementById("form-name").value.trim();
+  const email = document.getElementById("form-email").value.trim();
+  const phone = document.getElementById("form-phone").value.trim();
+  const service = document.getElementById("form-service").value;
+  const message = document.getElementById("form-message").value.trim();
+
+  // validation
+  if (!name || !email) {
+    showNotification("❌ Name & Email required");
+    return;
+  }
+
+  showNotification("⏳ Sending...");
+
+  try {
+    const res = await fetch("https://formsubmit.co/ajax/a276bd769ca66e0e20ce9f17afe705ee", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        phone,
+        service,
+        message,
+        _subject: "🔥 New Lead from Webmark"
+      })
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      showNotification("✅ Message sent!");
+
+      // reset fields
+      document.getElementById("form-name").value = "";
+      document.getElementById("form-email").value = "";
+      document.getElementById("form-phone").value = "";
+      document.getElementById("form-service").value = "";
+      document.getElementById("form-message").value = "";
+    } else {
+      showNotification("❌ Failed to send");
+    }
+
+  } catch (err) {
+    console.error(err);
+    showNotification("❌ Error sending");
+  }
+}
