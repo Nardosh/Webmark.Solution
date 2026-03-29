@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Webmark Solution – Grow Your Business Digitally</title>
+<meta name="description" content="Webmark Solution is a premium digital agency offering web design, SEO, branding, and digital marketing services. Grow your business digitally."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- PROGRESS BAR -->
+<div id="progress-bar"></div>
+
+<!-- NOTIFICATION -->
+<div class="notification" id="notif">
+  <span class="icon">✅</span>
+  <span id="notif-text">Message sent successfully!</span>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="logo">
+    <div class="logo-icon">W</div>
+    <span class="logo-text">Webmark <span>Solution</span></span>
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get Started →</a>
+  <div class="nav-toggle" id="nav-toggle" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    <canvas id="particles-canvas"></canvas>
+  </div>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span></span> #1 Digital Growth Agency
+      </div>
+      <h1 class="hero-title">
+        Grow Your<br>
+        Business<br>
+        <span class="grad">Digitally</span>
+      </h1>
+      <p class="hero-sub">We craft high-performance digital experiences that convert visitors into customers. SEO, Branding, Web Design — all under one roof.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Get Started →</a>
+        <a href="#contact" class="btn-outline">Contact Now</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">200+</div><div class="label">Clients Served</div></div>
+        <div class="hero-stat"><div class="num">500+</div><div class="label">Projects Done</div></div>
+        <div class="hero-stat"><div class="num">6+</div><div class="label">Years Experience</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div style="position:relative;">
+        <div class="hero-card hero-card-main">
+          <div class="card-top">
+            <div class="card-avatar">📈</div>
+            <div class="card-info">
+              <h4>Growth Analytics</h4>
+              <p>Real-time performance</p>
+            </div>
+          </div>
+          <div class="card-chart">
+            <div class="chart-bars">
+              <div class="chart-bar" style="height:40%;animation-delay:.1s"></div>
+              <div class="chart-bar" style="height:65%;animation-delay:.2s"></div>
+              <div class="chart-bar" style="height:50%;animation-delay:.3s"></div>
+              <div class="chart-bar" style="height:80%;animation-delay:.4s"></div>
+              <div class="chart-bar" style="height:60%;animation-delay:.5s"></div>
+              <div class="chart-bar" style="height:90%;animation-delay:.6s"></div>
+              <div class="chart-bar" style="height:75%;animation-delay:.7s"></div>
+            </div>
+          </div>
+          <div class="card-label">Monthly Revenue</div>
+          <div class="card-val">+147% <span style="font-size:.85rem;color:#4ade80;">↑</span></div>
+        </div>
+        <div class="float-tag float-tag1"><span class="dot"></span>SEO Optimized</div>
+        <div class="float-tag float-tag2"><span class="dot"></span>500+ Projects</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="max-w">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-tag">About Us</div>
+      <h2 class="section-title">We're a Team of <span class="accent">Digital Innovators</span></h2>
+      <p class="section-sub">Webmark Solution has been transforming businesses through cutting-edge digital strategies since 2018.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-img" data-aos="fade-right">
+        <div class="about-img-box">
+          <div class="about-pattern" id="about-dots"></div>
+        </div>
+        <div class="about-float">
+          <div class="big">98%</div>
+          <div class="sm">Client Satisfaction</div>
+        </div>
+      </div>
+      <div class="about-content" data-aos="fade-left">
+        <h3>We Build Digital Experiences That <span style="color:var(--neon)">Drive Results</span></h3>
+        <p>At Webmark Solution, we combine creativity with data-driven strategies to deliver exceptional digital solutions. From stunning websites to powerful SEO campaigns, we help businesses grow their online presence and generate more revenue.</p>
+        <p>Our team of expert designers, developers, and marketers work together to create cohesive digital experiences that resonate with your audience and drive measurable results.</p>
+        <div class="counters">
+          <div class="counter-card">
+            <div class="counter-num" data-target="200">0</div>
+            <div class="counter-label">Happy Clients</div>
+          </div>
+          <div class="counter-card">
+            <div class="counter-num" data-target="500">0</div>
+            <div class="counter-label">Projects Done</div>
+          </div>
+          <div class="counter-card">
+            <div class="counter-num" data-target="6">0</div>
+            <div class="counter-label">Years Active</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header" data-aos="fade-up">
+    <div class="section-tag">Our Services</div>
+    <h2 class="section-title">Everything You Need to <span class="accent">Dominate Online</span></h2>
+    <p class="section-sub">End-to-end digital solutions tailored for ambitious brands ready to scale.</p>
+  </div>
+  <div class="services-grid max-w">
+    <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+      <div class="service-icon">🌐</div>
+      <h3>Web Design & Development</h3>
+      <p>Custom, responsive websites built with modern technologies. From landing pages to full-scale web applications that convert visitors.</p>
+      <span class="service-tag">Most Popular</span>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="service-icon">🔍</div>
+      <h3>Search Engine Optimization</h3>
+      <p>Data-driven SEO strategies that push your business to page 1 of Google and keep it there with sustainable, white-hat techniques.</p>
+      <span class="service-tag">High ROI</span>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="service-icon">📱</div>
+      <h3>Social Media Marketing</h3>
+      <p>Strategic social media management and paid campaigns that build your brand, grow your audience, and drive engagement.</p>
+      <span class="service-tag">Trending</span>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="service-icon">🎨</div>
+      <h3>Brand Identity Design</h3>
+      <p>Complete brand identities — logos, color systems, typography, and brand guidelines that make your business unforgettable.</p>
+      <span class="service-tag">Creative</span>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="service-icon">📧</div>
+      <h3>Email & Content Marketing</h3>
+      <p>Compelling content strategies and email campaigns that nurture leads, build loyalty, and generate repeat business at scale.</p>
+      <span class="service-tag">High Conversion</span>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+      <div class="service-icon">📊</div>
+      <h3>Digital Advertising (PPC)</h3>
+      <p>ROI-focused Google Ads and Meta ad campaigns managed by certified experts. Every rupee tracked, every conversion counted.</p>
+      <span class="service-tag">Fast Results</span>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="section-header" data-aos="fade-up">
+    <div class="section-tag">Our Work</div>
+    <h2 class="section-title">Projects That <span class="accent">Speak for Themselves</span></h2>
+    <p class="section-sub">A curated selection of our finest digital work across industries.</p>
+  </div>
+  <div class="portfolio-filters" data-aos="fade-up">
+    <button class="filter-btn active" data-filter="all">All Projects</button>
+    <button class="filter-btn" data-filter="web">Web Design</button>
+    <button class="filter-btn" data-filter="seo">SEO</button>
+    <button class="filter-btn" data-filter="brand">Branding</button>
+    <button class="filter-btn" data-filter="app">Apps</button>
+  </div>
+  <div class="portfolio-grid max-w">
+    <div class="portfolio-item" data-cat="web" data-aos="zoom-in">
+      <div class="portfolio-img" style="background:linear-gradient(135deg,#1a0533,#2d1b69);">
+        <div class="portfolio-icon">🛒</div>
+      </div>
+      <div class="portfolio-overlay">
+        <h4>LuxeShop E-Commerce</h4>
+        <p>Web Design · Development</p>
+        <div class="portfolio-tag-list"><span class="ptag">React</span><span class="ptag">Node.js</span></div>
+      </div>
+    </div>
+    <div class="portfolio-item" data-cat="seo" data-aos="zoom-in" data-aos-delay="100">
+      <div class="portfolio-img" style="background:linear-gradient(135deg,#0c1445,#1e3a5f);">
+        <div class="portfolio-icon">📈</div>
+      </div>
+      <div class="portfolio-overlay">
+        <h4>FinanceHub SEO Campaign</h4>
+        <p>SEO · Content Strategy</p>
+        <div class="portfolio-tag-list"><span class="ptag">+340% traffic</span><span class="ptag">6 months</span></div>
+      </div>
+    </div>
+    <div class="portfolio-item" data-cat="brand" data-aos="zoom-in" data-aos-delay="200">
+      <div class="portfolio-img" style="background:linear-gradient(135deg,#1a0a2e,#3d1a5c);">
+        <div class="portfolio-icon">🎨</div>
+      </div>
+      <div class="portfolio-overlay">
+        <h4>Nova Brand Identity</h4>
+        <p>Branding · Visual Identity</p>
+        <div class="portfolio-tag-list"><span class="ptag">Logo</span><span class="ptag">Guidelines</span></div>
+      </div>
+    </div>
+    <div class="portfolio-item" data-cat="app" data-aos="zoom-in" data-aos-delay="300">
+      <div class="portfolio-img" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);">
+        <div class="portfolio-icon">📱</div>
+      </div>
+      <div class="portfolio-overlay">
+        <h4>MediTrack Mobile App</h4>
+        <p>App Design · Development</p>
+        <div class="portfolio-tag-list"><span class="ptag">React Native</span><span class="ptag">UX</span></div>
+      </div>
+    </div>
+    <div class="portfolio-item" data-cat="web" data-aos="zoom-in" data-aos-delay="400">
+      <div class="portfolio-img" style="background:linear-gradient(135deg,#200122,#6f0000);">
+        <div class="portfolio-icon">🍽️</div>
+      </div>
+      <div class="portfolio-overlay">
+        <h4>SpiceRoute Restaurant</h4>
+        <p>Web Design · SEO</p>
+        <div class="portfolio-tag-list"><span class="ptag">WordPress</span><span class="ptag">SEO</span></div>
+      </div>
+    </div>
+    <div class="portfolio-item" data-cat="seo" data-aos="zoom-in" data-aos-delay="500">
+      <div class="portfolio-img" style="background:linear-gradient(135deg,#0a3d2a,#1a5c3f);">
+        <div class="portfolio-icon">🌿</div>
+      </div>
+      <div class="portfolio-overlay">
+        <h4>EcoStore Digital Growth</h4>
+        <p>SEO · Social Media</p>
+        <div class="portfolio-tag-list"><span class="ptag">+200% leads</span><span class="ptag">3 months</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-header" data-aos="fade-up">
+    <div class="section-tag">Testimonials</div>
+    <h2 class="section-title">What Our <span class="accent">Clients Say</span></h2>
+    <p class="section-sub">Don't just take our word for it — hear from the businesses we've helped grow.</p>
+  </div>
+  <div class="testimonials-wrapper" data-aos="fade-up">
+    <div class="testimonials-track" id="testimonials-track">
+      <div class="testimonial">
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Webmark Solution completely transformed our online presence. Our website traffic increased by 280% in just 4 months, and we're getting more qualified leads than ever before. Absolutely phenomenal work."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">RA</div>
+            <div><div class="testi-name">Rahul Agarwal</div><div class="testi-role">CEO, TechVentures India</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The team at Webmark is incredibly talented and professional. They redesigned our entire brand identity and built a stunning website that perfectly captures our vision. We've seen a 150% increase in customer inquiries."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SP</div>
+            <div><div class="testi-name">Sneha Patel</div><div class="testi-role">Founder, Bloom Boutique</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Their SEO expertise is unmatched. We went from page 5 to page 1 on Google for our main keywords within 3 months. The ROI has been incredible — I'd recommend Webmark Solution to any business serious about growth."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MK</div>
+            <div><div class="testi-name">Mohammed Khan</div><div class="testi-role">Director, BuildRight Construction</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-nav">
+      <button class="testi-btn" onclick="prevTestimonial()">←</button>
+      <button class="testi-btn" onclick="nextTestimonial()">→</button>
+    </div>
+    <div class="testi-dots" id="testi-dots">
+      <div class="testi-dot active" onclick="goToTestimonial(0)"></div>
+      <div class="testi-dot" onclick="goToTestimonial(1)"></div>
+      <div class="testi-dot" onclick="goToTestimonial(2)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="section-header" data-aos="fade-up">
+    <div class="section-tag">Pricing</div>
+    <h2 class="section-title">Transparent Pricing, <span class="accent">Zero Surprises</span></h2>
+    <p class="section-sub">Choose the plan that fits your business goals. All plans include dedicated support.</p>
+  </div>
+  <div class="pricing-grid max-w">
+    <div class="pricing-card" data-aos="fade-up" data-aos-delay="0">
+      <div class="plan-name">STARTER</div>
+      <div class="plan-price">₹9,999<span>/mo</span></div>
+      <div class="plan-desc">Perfect for small businesses just getting started with digital marketing.</div>
+      <ul class="plan-features">
+        <li>5-Page Website Design</li>
+        <li>Basic SEO Setup</li>
+        <li>Google Business Profile</li>
+        <li>Monthly Analytics Report</li>
+        <li>Email Support</li>
+        <li class="no">Social Media Management</li>
+        <li class="no">PPC Advertising</li>
+        <li class="no">Custom Branding</li>
+      </ul>
+      <a href="#contact" class="btn-outline" style="display:block;text-align:center;">Get Started</a>
+    </div>
+    <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="150">
+      <div class="popular-badge">⭐ Most Popular</div>
+      <div class="plan-name">GROWTH</div>
+      <div class="plan-price" style="color:var(--neon)">₹24,999<span>/mo</span></div>
+      <div class="plan-desc">For growing businesses ready to scale their digital presence aggressively.</div>
+      <ul class="plan-features">
+        <li>15-Page Website Design</li>
+        <li>Advanced SEO Optimization</li>
+        <li>Social Media Management (3 platforms)</li>
+        <li>Google & Meta Ads Management</li>
+        <li>Monthly Strategy Call</li>
+        <li>Brand Identity Design</li>
+        <li>Weekly Reports</li>
+        <li class="no">Dedicated Account Manager</li>
+      </ul>
+      <a href="#contact" class="btn-primary" style="display:block;text-align:center;">Get Started</a>
+    </div>
+    <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="plan-name">ENTERPRISE</div>
+      <div class="plan-price">₹49,999<span>/mo</span></div>
+      <div class="plan-desc">Full-service digital agency solution for serious brands with big ambitions.</div>
+      <ul class="plan-features">
+        <li>Custom Website + Web App</li>
+        <li>Full SEO Domination</li>
+        <li>All Social Platforms</li>
+        <li>Full Ad Campaign Management</li>
+        <li>Complete Brand Identity</li>
+        <li>Dedicated Account Manager</li>
+        <li>Real-time Dashboard Access</li>
+        <li>Priority 24/7 Support</li>
+      </ul>
+      <a href="#contact" class="btn-outline" style="display:block;text-align:center;">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header" data-aos="fade-up">
+    <div class="section-tag">Contact Us</div>
+    <h2 class="section-title">Let's Build Something <span class="accent">Amazing Together</span></h2>
+    <p class="section-sub">Ready to grow? Fill the form and we'll get back to you within 24 hours.</p>
+  </div>
+  <div class="contact-grid max-w">
+    <div data-aos="fade-right">
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p>We're just a message away. Tell us about your project and let's explore how Webmark Solution can help you achieve your digital goals.</p>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div><h4>Phone / WhatsApp</h4><p>+91 70510 86745</p></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📧</div>
+          <div><h4>Email</h4><p>hello@webmarksolution.com</p></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div><h4>Location</h4><p>India (Serving Globally)</p></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">⏰</div>
+          <div><h4>Working Hours</h4><p>Mon–Sat, 9AM – 7PM IST</p></div>
+        </div>
+      </div>
+    </div>
+    <div data-aos="fade-left">
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="form-name" placeholder="John Doe"/>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="form-email" placeholder="john@company.com"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="form-phone" placeholder="+91 98765 43210"/>
+        </div>
+        <div class="form-group">
+          <label>Service Needed</label>
+          <select id="form-service">
+            <option value="">Select a service...</option>
+            <option>Web Design & Development</option>
+            <option>Search Engine Optimization</option>
+            <option>Social Media Marketing</option>
+            <option>Brand Identity Design</option>
+            <option>PPC Advertising</option>
+            <option>Full Digital Package</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Project Details</label>
+          <textarea id="form-message" placeholder="Tell us about your project, goals, and timeline..."></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%;justify-content:center;" onclick="submitForm()">Send Message 🚀</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo">
+        <div class="logo-icon">W</div>
+        <span class="logo-text">Webmark <span>Solution</span></span>
+      </a>
+      <p style="margin-top:12px;">Transforming businesses through smart digital strategies, stunning design, and measurable growth.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Instagram">📸</a>
+        <a href="#" class="social-btn" title="LinkedIn">💼</a>
+        <a href="#" class="social-btn" title="Twitter">🐦</a>
+        <a href="https://wa.me/917051086745" class="social-btn" title="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Web Design</a></li>
+        <li><a href="#services">SEO</a></li>
+        <li><a href="#services">Social Media</a></li>
+        <li><a href="#services">Branding</a></li>
+        <li><a href="#services">PPC Ads</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#portfolio">Our Work</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://wa.me/917051086745">WhatsApp</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Webmark Solution. All rights reserved.</p>
+    <p style="color:var(--text2);">Designed with ❤️ for Digital Excellence</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/917051086745?text=Hi%2C%20I%20want%20to%20know%20about%20your%20services" target="_blank" id="wa-btn">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-tooltip">Chat with us on WhatsApp</span>
+</a>
+
+<!-- CHATBOT TOGGLE -->
+<button id="chat-toggle" onclick="toggleChat()">
+  <span class="chat-icon">💬</span>
+  <span class="close-icon">✕</span>
+</button>
+
+<!-- CHATBOT WINDOW -->
+<div id="chat-window">
+  <div class="chat-header">
+    <div class="chat-avatar">🤖</div>
+    <div class="chat-header-info">
+      <h4>Webmark AI Assistant</h4>
+      <div class="chat-online"><span class="dot"></span>Online — replies instantly</div>
+    </div>
+  </div>
+  <div class="chat-messages" id="chat-messages"></div>
+  <div class="chat-quick" id="quick-btns">
+    <button class="quick-btn" onclick="quickReply('pricing')">💰 Pricing</button>
+    <button class="quick-btn" onclick="quickReply('services')">⚡ Services</button>
+    <button class="quick-btn" onclick="quickReply('contact')">📞 Contact</button>
+    <button class="quick-btn" onclick="quickReply('portfolio')">🎨 Portfolio</button>
+  </div>
+  <div class="chat-input-row">
+    <input type="text" id="chat-input" placeholder="Ask anything..." onkeydown="if(event.key==='Enter')sendChat()"/>
+    <button id="chat-send" onclick="sendChat()">➤</button>
+  </div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
