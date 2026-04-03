@@ -171,7 +171,7 @@ const chatMessages = document.getElementById('chat-messages');
 let chatOpen = false, firstOpen = true;
 
 const botReplies = {
-  pricing: `Our plans start at ₹9,999/mo:\n• Starter – ₹9,999/mo (5-page site + basic SEO)\n• Growth – ₹24,999/mo (full digital marketing suite)\n• Enterprise – ₹49,999/mo (custom solutions)\n\nWant a custom quote? Just ask! 🎯`,
+  pricing: `Our plans start at ₹9,999/mo:\n• Starter – ₹7,999/mo (5-page site + basic SEO)\n• Growth – ₹16,999/mo (full digital marketing suite)\n• Enterprise – ₹34,999/mo (custom solutions)\n\nWant a custom quote? Just ask! 🎯`,
   services: `We offer 6 core services:\n🌐 Web Design & Development\n🔍 SEO Optimization\n📱 Social Media Marketing\n🎨 Brand Identity Design\n📧 Content Marketing\n📊 PPC Advertising\n\nWhich service interests you most?`,
   contact: `You can reach us via:\n📞 WhatsApp: +91 70510 86745\n📧 Email: hello@webmarksolution.com\n⏰ Hours: Mon–Sat, 9AM–7PM IST\n\nOr click the WhatsApp button at the bottom left! 💬`,
   portfolio: `We've worked on 500+ projects across:\n🛒 E-Commerce platforms\n📈 SEO campaigns (+340% traffic results)\n🎨 Brand identity systems\n📱 Mobile app design\n🍽️ Restaurant & hospitality sites\n\nCheck our Portfolio section above! 🚀`,
